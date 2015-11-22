@@ -1,0 +1,5 @@
+grep
+-----
+#The file called “number_file” has the list of numbers, the above grep command matches only the number which 1 (minimum is 0) to 5 digits (maximum 99999).
+
+grep  "^[0-9]\{1,5\}$" number_file
