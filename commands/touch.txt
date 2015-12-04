@@ -1,0 +1,21 @@
+$ touch memo{1,2,3,4,5}
+$ ls
+memo1
+memo2
+memo3
+memo4
+memo5
+
+$ touch {John,Bill,Sally}-{Breakfast,Lunch,Dinner}
+$ ls
+Bill-Breakfast Bill-Lunch
+John-Dinner Sally-Breakfast
+Bill-Dinner
+John-Breakfast John-Lunch
+Sally-Dinner
+$ rm -f {John,Bill,Sally}-{Breakfast,Lunch,Dinner}
+$ touch {a..f}{1..5}
+$ ls
+a1 a3 a5 b2 b4 c1 c3 c5 d2 d4 e1 e3 e5 f2 f4
+a2 a4 b1 b3 b5 c2 c4 d1 d3 d5 e2 e4 f1 f3 f5
+
