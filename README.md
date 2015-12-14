@@ -11,5 +11,7 @@ grep  -v "^#\|^'\|^\/\/" comments_file
 
 4. 
 
-Word and line count
+word and line count
 ===================
+
+wc -l <file_name>
