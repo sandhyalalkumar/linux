@@ -9,7 +9,17 @@ grep  "^[0-9]\{5\}$" number_file
 3.The file called “comments_file” has perl,VB script and C programming comment lines. Now the following grep command searches for the line which does not start with # or single quote (‘) or double front slashes (//).
 grep  -v "^#\|^'\|^\/\/" comments_file
 
-4. 
+4.Option -v, will display all the lines except the match. In the example below,
+it displays all the records from /etc/password that doesn't match John.  
+grep -v John /etc/passwd 
+
+5.Pass the option -i (ignore case), which will ignore the case while searching. 
+grep -i john /etc/passwd
+
+6. Search recursively
+# grep -ri john /home/users 
+
+
 
 SCP
 ===
