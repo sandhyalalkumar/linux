@@ -4,7 +4,7 @@ $ pip install virtualenvwrapper
 $ source virtualenvwrapper.sh
 
 Create Virtual Environment
-$mkvirtualenv virtula_env_name
+$ mkvirtualenv virtula_env_name
 
 Start working on virtual env
 $ workon virtula_env_name
